@@ -1,0 +1,42 @@
+# robots.txt for Goldy Aggarwal Home Tuition
+# https://goldy-tuition.vercel.app
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://goldy-tuition.vercel.app/sitemap.xml
+
+# Allow important pages
+Allow: /$
+Allow: /*?*
+
+# Disallow admin and API areas
+Disallow: /api/
+
+# Crawl delay (be nice to server)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Allow mobile crawlers
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Host directive
+Host: https://goldy-tuition.vercel.app
